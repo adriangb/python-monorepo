@@ -8,6 +8,7 @@ requires-python = ">=3.10"
 
 [tool.pdm.dev-dependencies]
 app = ["-e ./workspaces/app"]
+cli = ["-e ./workspaces/cli"]
 lib = ["-e ./workspaces/lib"]
 
 [tool.pdm.build]
