@@ -1,0 +1,7 @@
+workspaces/*/.venv
+workspaces/*/pdm.lock
+workspaces/*/pdm.toml
+.pdm.toml
+.venv
+__pycache__
+.pyc

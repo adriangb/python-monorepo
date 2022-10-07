@@ -1,0 +1,18 @@
+[project]
+name = "namespace"
+version = "0.0.0"
+description = ""
+authors = []
+dependencies = []
+requires-python = ">=3.10"
+
+[tool.pdm.dev-dependencies]
+app = ["-e ./workspaces/app"]
+lib = ["-e ./workspaces/lib"]
+
+[tool.pdm.build]
+includes = []
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"

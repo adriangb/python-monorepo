@@ -1,0 +1,16 @@
+[project]
+name = "namespace-lib"
+version = "0.0.0"
+description = ""
+authors = []
+dependencies = [
+    "pydantic[email]>=1.10.2",
+]
+requires-python = ">=3.7"
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.build]
+includes = ["src/namespace"]
