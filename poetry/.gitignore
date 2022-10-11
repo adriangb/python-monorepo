@@ -1,0 +1,4 @@
+workspaces/*/.venv
+workspaces/*/poetry.lock
+workspaces/*/poetry.toml
+.poetry.toml

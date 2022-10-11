@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "namespace-lib"
+version = "0.0.0"
+description = ""
+authors = []
+packages = [{include = "namespace", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+pydantic = { extras = ["email"], version = ">=1.10.2"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

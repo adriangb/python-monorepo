@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "namespace"
+version = "0.1.0"
+description = ""
+authors = []
+readme = "README.md"
+packages = []
+
+[tool.poetry.group.main.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.app.dependencies]
+namespace-app = { path = "workspaces/app", develop = true}
+
+[tool.poetry.group.lib.dependencies]
+namespace-lib = { path = "workspaces/lib", develop = true}
+
+[tool.poetry.group.lib-test.dependencies]
+namespace-lib = { path = "workspaces/lib", develop = true, extras=["test"]}
+
+[tool.poetry.group.cli.dependencies]
+namespace-cli = { path = "workspaces/cli", develop = true}
+
+[tool.poetry.group.cli-test.dependencies]
+namespace-cli = { path = "workspaces/cli", develop = true, extras=["test"]}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

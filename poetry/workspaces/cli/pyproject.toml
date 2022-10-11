@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "namespace-cli"
+version = "0.0.0"
+description = ""
+authors = []
+packages = [{include = "namespace", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rich = "^12.6.0"
+namespace-lib = { path = "../lib"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,4 @@
+workspaces/*/.venv
+workspaces/*/pdm.lock
+workspaces/*/pdm.toml
+.pdm.toml
