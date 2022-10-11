@@ -4,7 +4,7 @@ version = "0.0.0"
 description = ""
 authors = []
 dependencies = [
-    "rich>=12.6.0",
+    "orjson>=3.8.0",
 ]
 requires-python = ">=3.7"
 

@@ -3,7 +3,9 @@ name = "namespace-cli"
 version = "0.0.0"
 description = ""
 authors = []
-dependencies = []
+dependencies = [
+    "rich>=12.6.0",
+]
 requires-python = ">=3.7"
 
 [tool.pdm.dev-dependencies]

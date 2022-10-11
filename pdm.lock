@@ -43,6 +43,9 @@ requires_python = ">=3.7"
 editable = true
 path = "./workspaces/cli"
 summary = ""
+dependencies = [
+    "rich>=12.6.0",
+]
 
 [[package]]
 name = "namespace-lib"
