@@ -8,6 +8,10 @@ packages = [{include = "namespace", from = "src"}]
 [tool.poetry.dependencies]
 python = ">=3.7"
 pydantic = { extras = ["email"], version = ">=1.10.2"}
+pytest = { version = "*", optional = true }
+
+[tool.poetry.extras]
+test = ["pytest"]
 
 [build-system]
 requires = ["poetry-core"]

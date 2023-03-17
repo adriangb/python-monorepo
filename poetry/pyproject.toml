@@ -21,9 +21,6 @@ namespace-lib = { path = "workspaces/lib", develop = true, extras=["test"]}
 [tool.poetry.group.cli.dependencies]
 namespace-cli = { path = "workspaces/cli", develop = true}
 
-[tool.poetry.group.cli-test.dependencies]
-namespace-cli = { path = "workspaces/cli", develop = true, extras=["test"]}
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
