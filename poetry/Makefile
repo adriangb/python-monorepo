@@ -15,3 +15,7 @@ test-%: .init
 	pipx run poetry run pytest workspaces/$*
 
 tests: .init $(addprefix test-, $(PROJECTS)) 
+
+test-isolated-%: .init
+	pipx run poetry install --sync --only $*
+	pipx run poetry run pytest workspaces/$*
