@@ -10,12 +10,12 @@ PROJECTS := $(notdir $(wildcard workspaces/*))
 
 init: .clean-venv .venv
 
-test-%: .init
+test-%: .venv
 	pipx run poetry install --sync --with $*
 	pipx run poetry run pytest workspaces/$*
 
-tests: .init $(addprefix test-, $(PROJECTS)) 
+tests: .venv $(addprefix test-, $(PROJECTS)) 
 
-test-isolated-%: .init
+test-isolated-%: .venv
 	pipx run poetry install --sync --only $*
 	pipx run poetry run pytest workspaces/$*
