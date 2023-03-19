@@ -5,9 +5,13 @@ import orjson
 from namespace.lib import Foo
 
 
-def main() -> None:
-    while True:
-        print(orjson.dump(Foo(name="app").dict()).decode())
+def main(max_iters: float | None) -> None:
+    iter = 0
+    if max_iters is None:
+        max_iters = float("inf")
+    while iter < max_iters:
+        iter +=1
+        print(orjson.dumps(Foo(name="app").dict()).decode())
         sleep(1)
 
 
